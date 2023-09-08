@@ -1,0 +1,25 @@
+.campo-texto{
+    margin: 1.5em 0;
+}
+
+
+.campo-texto__rotulo{
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.campo-texto__input{
+    background: #FFF;
+    display: block;
+    width: 100%;
+    padding: 1.8em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    border: none;
+
+}
+
+.campo-texto__input::placeholder{
+    color: #A4A4A4;
+    font-size: 1rem;
+}
