@@ -1,0 +1,26 @@
+.campo-dropdown{
+    margin: 1.5em 0;
+}
+
+
+.campo-dropdown__rotulo{
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.campo-dropdown__input{
+    background: #FFF;
+    display: block;
+    width: 100%;
+    padding: 1.8em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    border: none;
+
+}
+
+.campo-dropdown__input{
+    color: #000000;
+    font-size: 1rem;
+}
+
