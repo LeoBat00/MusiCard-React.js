@@ -1,0 +1,13 @@
+.team{
+    text-align: center;
+    padding: 2em;
+    background-color: #E8FFFF;
+}
+
+.team__titulo{
+    font-size: 2rem;
+    border-bottom: 4px solid #82CFFA;
+    font-weight: 400;
+    display: inline-block;
+    padding-bottom: 0.5em;
+}
