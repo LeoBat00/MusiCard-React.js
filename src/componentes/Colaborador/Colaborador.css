@@ -1,0 +1,35 @@
+.colaborador{
+    width: 280px; 
+    margin: 0.5em 1em;
+}
+
+
+.colaborador__cabecalho{
+    border-radius: 10px 10px 0 0 ;
+}
+.colaborador__imagem{
+    position: relative;
+    width: 50%;
+    border-radius: 50%;
+    bottom: -50px;
+}
+
+.colaborador__rodape{
+    background-color: white;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.08);
+    padding: 40px 0 40px 0;
+    border-radius: 0 0 10px 10px;
+}
+.colaborador__nome {
+    color: #6278F7;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.colaborador__classe{
+    font-size: 1.3rem;
+    color: #212121;
+    padding: 0 1em;
+    font-weight: 400;
+}

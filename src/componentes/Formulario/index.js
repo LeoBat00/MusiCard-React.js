@@ -6,15 +6,6 @@ import DropDown from '../DropDown'
 import './Formulario.css';
 const Formulario = (props) => {
 
-    const times = [
-        'programação',
-        'front-end',
-        'data-science',
-        'devops',
-        'ux e design',
-        'mobile',
-        'inovação e gestão'
-    ]
     const [nome,setNome] = useState('');
     const [cargo,setCargo] = useState('');
     const [imagem,setImagem] = useState('');
@@ -27,8 +18,13 @@ const Formulario = (props) => {
             nome: nome,
             cargo: cargo,
             imagem: imagem,
-            time: time
+            team: time
         })
+
+        setNome('');
+        setCargo('');
+        setImagem('');
+        setTime('');
         
     }
 
@@ -41,7 +37,7 @@ const Formulario = (props) => {
                 <CampoTexto obrigatorio={true} label="Nome" valor={nome} aoAlterado={valor => setNome(valor)} placeholder="Digite seu Nome" />
                 <CampoTexto obrigatorio={true} label ="Cargo" valor={cargo} aoAlterado={valor => setCargo(valor)} placeholder="Digite seu Cargo" />
                 <CampoTexto label ="Imagem" placeholder="Digite o endereço da imagem" valor={imagem} aoAlterado={valor => setImagem(valor)} />
-                <DropDown obrigatorio={true} label ="Time" itens={times} valor={time} aoAlterado={valor => setTime(valor)}/>
+                <DropDown obrigatorio={true} label ="Time" itens={props.teamsName} valor={time} aoAlterado={valor => setTime(valor)}/>
 
                 <Botao>
                     Criar Card
