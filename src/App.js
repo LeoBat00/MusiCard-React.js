@@ -6,39 +6,44 @@ function App() {
 
   const teams = [
     {
-      nome: 'Programação',
-      corPrimaria: '#57C278',
-      corSecundaria: '#D9F7E9'
+      nome: 'Rock',
+      corPrimaria: '#F5A8A8',
+      corSecundaria: 'linear-gradient(180deg, #252525 0%, #8F2424 100%)'
     },
     {
-      nome: 'Front-end',
-      corPrimaria: '#82CFFA',
-      corSecundaria: '#E8F8FF'
+      nome: 'Pop',
+      corPrimaria: '#1C836B',
+      corSecundaria: 'linear-gradient(180deg, #242424 0%, #0D8568 100%)'
     },
     {
-      nome: 'Data-science',
-      corPrimaria: '#A6D157',
-      corSecundaria: '#F0F8E2'
+      nome: 'Metal',
+      corPrimaria: '#4B4B4B',
+      corSecundaria: 'linear-gradient(180deg, #242424 0%, #000 100%)'
     },
     {
-      nome: 'Devops',
-      corPrimaria: '#E06B69',
-      corSecundaria: '#FDE7E8'
+      nome: 'Reggae',
+      corPrimaria: '#ACC368',
+      corSecundaria: 'linear-gradient(180deg, #212121 0%, rgba(26, 69, 30, 0.52) 47.92%, rgba(173, 175, 47, 0.56) 75%, rgba(175, 171, 48, 0.56) 75.01%, rgba(218, 68, 48, 0.60) 100%)'
     },
     {
-      nome: 'Ux e Design',
-      corPrimaria: '#FFBA05',
-      corSecundaria: '#FFF5D9'
+      nome: 'Lofi',
+      corPrimaria: '#8172A0',
+      corSecundaria: '#linear-gradient(180deg, #212121 0%, rgba(85, 67, 199, 0.60) 100%)'
     },
     {
-      nome: 'Mobile',
-      corPrimaria: '#DB6EBF',
-      corSecundaria: '#FAE9F5'
+      nome: 'Sertanejo',
+      corPrimaria: '#F2CD6C',
+      corSecundaria: 'linear-gradient(180deg, #212121 0%, #FFA149 100%)'
     },
     {
-      nome: 'Inovação e Gestão',
-      corPrimaria: '#FF8A29',
-      corSecundaria: '#FFEEDF'
+      nome: 'Eletrônica',
+      corPrimaria: '#F06CF2',
+      corSecundaria: 'linear-gradient(180deg, #212121 0%, #E42E9B 100%)'
+    },
+    {
+      nome: 'Outros',
+      corPrimaria: '#FFFFFF',
+      corSecundaria: 'rgba(144, 144, 144, 0.26);'
     },
     
   ]
@@ -53,7 +58,8 @@ function App() {
   return (
     <div className="App">
         <Banner />
-        <Formulario teamsName={teams.map(team => team.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador) } />
+        <Formulario generoName={teams.map(team => team.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador) } />
+
         {teams.map(team => <Team 
           key={team.nome} 
           nome={team.nome} 

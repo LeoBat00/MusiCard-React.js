@@ -8,7 +8,7 @@ const Colaborador = (props) => {
             </div>
             <div className='colaborador__rodape'>
                 <h4 className='colaborador__nome'>{props.nome}</h4>
-                <h5 className='colaborador__classe'>{props.cargo}</h5>
+                <h5 className='colaborador__classe'>{props.musica}</h5>
             </div>
 
         </div>

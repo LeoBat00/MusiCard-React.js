@@ -4,10 +4,15 @@
     margin: 5em 0 ;
 }
 
+.formulario__titulo{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 .formulario form{
     width: 60%;
     max-width: 80%;
-    background-color: #F6F6F6;
+    background: linear-gradient(180deg, #4958E0 0%, rgba(117, 72, 126, 0.19) 81.25%, rgba(128, 69, 104, 0.00) 100%);
     border-radius: 20px;
     padding: 2em 5em;
     box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.08);

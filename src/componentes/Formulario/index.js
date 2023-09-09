@@ -7,24 +7,24 @@ import './Formulario.css';
 const Formulario = (props) => {
 
     const [nome,setNome] = useState('');
-    const [cargo,setCargo] = useState('');
+    const [Musica,setMusica] = useState('');
     const [imagem,setImagem] = useState('');
     
-    const [time,setTime] = useState('');
+    const [Genêro,setGenêro] = useState('');
 
     const aoSalvar = (evento) =>{
         evento.preventDefault();
         props.aoColaboradorCadastrado({
             nome: nome,
-            cargo: cargo,
+            musica: Musica,
             imagem: imagem,
-            team: time
+            team: Genêro
         })
 
         setNome('');
-        setCargo('');
+        setMusica('');
         setImagem('');
-        setTime('');
+        setGenêro('');
         
     }
 
@@ -32,17 +32,18 @@ const Formulario = (props) => {
     return(
         <section className='formulario'>
             <form onSubmit={aoSalvar}>
-                <h2 className='formulario__titulo'>Preencha os dados para criar o card do colaborador.</h2>
+                <h2 className='formulario__titulo'>Preencha os dados para criar seus Cards Musicais!</h2>
 
-                <CampoTexto obrigatorio={true} label="Nome" valor={nome} aoAlterado={valor => setNome(valor)} placeholder="Digite seu Nome" />
-                <CampoTexto obrigatorio={true} label ="Cargo" valor={cargo} aoAlterado={valor => setCargo(valor)} placeholder="Digite seu Cargo" />
-                <CampoTexto label ="Imagem" placeholder="Digite o endereço da imagem" valor={imagem} aoAlterado={valor => setImagem(valor)} />
-                <DropDown obrigatorio={true} label ="Time" itens={props.teamsName} valor={time} aoAlterado={valor => setTime(valor)}/>
+                <CampoTexto obrigatorio={true} label="Banda" valor={nome} aoAlterado={valor => setNome(valor)} placeholder="Digite o nome da Banda" />
+                <CampoTexto obrigatorio={true} label ="Música" valor={Musica} aoAlterado={valor => setMusica(valor)} placeholder="Digite sua Música favorita desta Banda" />
+                <CampoTexto label ="Icone" placeholder="Digite o endereço da imagem" valor={imagem} aoAlterado={valor => setImagem(valor)} />
+                <DropDown obrigatorio={true} label ="Genêro Musical" itens={props.generoName} valor={Genêro} aoAlterado={valor => setGenêro(valor)}/>
 
                 <Botao>
                     Criar Card
                 </Botao>
             </form>
+
         </section>
 
     )

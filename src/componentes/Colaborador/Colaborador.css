@@ -15,7 +15,7 @@
 }
 
 .colaborador__rodape{
-    background-color: white;
+    background-color: #242424;
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.08);
     padding: 40px 0 40px 0;
     border-radius: 0 0 10px 10px;
@@ -28,8 +28,9 @@
 }
 
 .colaborador__classe{
-    font-size: 1.3rem;
-    color: #212121;
+    margin: 0;
+    font-size: 1rem;
+    color: #828282;
     padding: 0 1em;
     font-weight: 400;
 }
