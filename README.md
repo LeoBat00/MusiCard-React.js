@@ -2,7 +2,8 @@
 
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=Em%20Progresso&color=yellow&style=for-the-badge"/>
 
-Bem-vindo ao MusiCard! Este é um projeto pessoal baseado em um curso da Alura. Aqui, você pode organizar cartões (Cards) das suas bandas favoritas junto com suas músicas preferidas, tudo organizado por gênero musical. 
+Bem-vindo ao MusiCard! 
+Este é um projeto pessoal baseado em um curso da Alura. Aqui, você pode organizar cartões (Cards) das suas bandas favoritas junto com suas músicas preferidas, tudo organizado por gênero musical
 
 ## Demonstração
 >Visite o projeto! https://organo-react-green.vercel.app/
