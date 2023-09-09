@@ -37,7 +37,7 @@ const Formulario = (props) => {
                 <CampoTexto obrigatorio={true} label="Banda" valor={nome} aoAlterado={valor => setNome(valor)} placeholder="Digite o nome da Banda" />
                 <CampoTexto obrigatorio={true} label ="Música" valor={Musica} aoAlterado={valor => setMusica(valor)} placeholder="Digite sua Música favorita desta Banda" />
                 <CampoTexto label ="Icone" placeholder="Digite o endereço da imagem" valor={imagem} aoAlterado={valor => setImagem(valor)} />
-                <DropDown obrigatorio={true} label ="Genêro Musical" itens={props.generoName} valor={Genêro} aoAlterado={valor => setGenêro(valor)}/>
+                <DropDown obrigatorio={true} label ="Gênero Musical" itens={props.generoName} valor={Genêro} aoAlterado={valor => setGenêro(valor)}/>
 
                 <Botao>
                     Criar Card
